@@ -1,8 +1,9 @@
-<link rel="stylesheet" href="css/main.css"><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.css" rel="stylesheet">
@@ -11,24 +12,26 @@
 </head>
 <body>
 	<div class="row" id="head">
-		<div class="col-lg-1">
+		
+		<div class="burger">
+			<img src="img/burger.png" width="45" height="45" alt="burger"> 
 		</div>
 		
-		<div>
+		<div class="logo">
 			<h4>Фитнес клуб</h4>
 			<h6>Санкт-Петербург</h6>
 		</div>
 		
-		<div>
+		<div id="phone-number">
 			<div class="align-self-start">
 			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 			<div class="align-self-end">
-			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** ** (Отдел продаж)
+			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 		</div>
 		
-		<div>
+		<div id="address">
 			<div class="align-self-start">
 			<img src="img/house.png" width="20" height="20" alt="house"> Адрес 1
 			</div>
@@ -37,27 +40,34 @@
 			</div>
 		</div>
 		
-		<div class="align-self-start" style="margin-top: 10px">
-			<a href="lk.html" class="red_button">Личный кабинет</a>
+		<div>
+			<form action="lk.html">
+			   <button value="Личный кабинет" class="red_button">Личный кабинет</button>
+		   </form>
 		</div>
-		
-		<div class="col-lg-1">
-		</div>
+
 	</div>
-	<div class="row" id="navigation">
-		<div class="col-lg-1">
-		</div>
+	<div class="row" id="navigation1">
+		<div class="row" id="navigation-row">
 		<a href="main.html" class="nav">Главная</a>
 		<a href="price.html" class="nav">Цены на абонементы</a>
 		<a href="timetable.html" class="nav">Расписание</a>
 		<a href="group.html" class="nav">Групповые программы</a>
 		<a href="coaches.html" class="nav">Тренерский состав</a>
-		<div class="col-lg-1">
 		</div>
 	</div>
-	<div class="gallery-container">
+	<div class="row" id="navigation2">
+		<div class="row" id="navigation-row">
+		<a href="main.html" class="nav">Главная</a>
+		<a href="price.html" class="nav">Цены</a>
+		<a href="timetable.html" class="nav">Расписание</a>
+		<a href="group.html" class="nav">Программы</a>
+		<a href="coaches.html" class="nav">Тренеры</a>
+		</div>
+	</div>
+	<div class="gallery-container coaches">
 		<h1 align="center">Наши тренеры</h1>
-        <div>
+        <div class="row">
 			<figure class="photo">
 			<img class="center" src="img/c1.jpg">
 			<p><figcaption align="center">
@@ -81,7 +91,8 @@
 				Подготовка к соревнованиям по бодибилдингу и пауэрлифтингу
 			</figcaption></p>
 			</figure>
-			
+		</div>
+		<div class="row">
 			<figure class="photo">
 			<img class="center" src="img/c4.jpg">
 			<p><figcaption align="center">
@@ -107,9 +118,63 @@
 			</figure>
         </div>
 	</div>
+	<div class="gallery-container coaches1">
+		<h1 align="center">Наши тренеры</h1>
+        <div class="row">
+			<figure class="photo1">
+			<img class="center" src="img/c1.jpg">
+			<p><figcaption align="center">
+				<h4>Беляев Кирилл</h4>
+				Координатор групповых программ: силовые и интервальные классы, стретчинг
+			</figcaption></p>
+			</figure>
+				
+			<figure class="photo1">
+			<img class="center" src="img/c2.jpg">
+			<p><figcaption align="center">
+				<h4>Царевский Владимир</h4>
+				Преподаватель класса йоги
+			</figcaption></p>
+			</figure>
+		</div>
+		<div class="row">
+			<figure class="photo1">
+			<img class="center" src="img/c3.jpg">
+			<p><figcaption align="center">
+				<h4>Никулин Артем</h4>
+				Подготовка к соревнованиям по бодибилдингу и пауэрлифтингу
+			</figcaption></p>
+			</figure>
+		
+			<figure class="photo1">
+			<img class="center" src="img/c4.jpg">
+			<p><figcaption align="center">
+				<h4>Гусейнова Елена</h4>
+				Групповые программы: классические и степ-аэробика, силовые и интервальные классы
+			</figcaption></p>
+			</figure>
+		</div>
+		<div class="row">
+			<figure class="photo1">
+			<img class="center" src="img/c5.jpg">
+			<p><figcaption align="center">
+				<h4>Вермиенко Виктория</h4>
+				Групповые программы: классические и степ-аэробика, силовые и интервальные классы
+			</figcaption></p>
+			</figure>
+			
+			<figure class="photo1">
+			<img class="center" src="img/c6.jpg">
+			<p><figcaption align="center">
+				<h4>Кузнецова Олеся</h4>
+				Групповые программы: классические и степ-аэробика, силовые и интервальные классы
+			</figcaption></p>
+			</figure>
+        </div>
+	</div>
 	<div class="row" id="bottom">
-		<div class="col-lg-2 offset-lg-1">
-			<div class="align-self-start">
+		<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-1 col-md-3 offset-md-1 col-sm-3 offset-sm-1 col-4">
+			<div class="align-self-start" id="bottom-elem">
 			Наши соцсети
 			</div>
 			<div class="align-self-end">
@@ -118,11 +183,16 @@
 				<img src="img/fb.png" width="30" height="30" alt="fb">
 			</div>
 		</div>
-		<div class="col-lg-4">
-			<img src="img/appstore.png" height="40" alt="download_apple">
-			<img src="img/googleplay.png" height="60" alt="download_android">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="align-self-start" id="bottom-elem">
+			Мобильные приложения
+			</div>
+			<div class="align-self-end">
+				<img src="img/appstore.png" height="30" alt="download_apple">
+				<img src="img/googleplay.png" height="30" alt="download_android">
+			</div>
 		</div>
-		<div class="col-lg-2 offset-lg-3">
+		<div class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-3 offset-1">
 			Copyright 2020
 		</div>
 	</div>

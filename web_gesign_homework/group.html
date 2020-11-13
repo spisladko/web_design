@@ -1,8 +1,9 @@
-<link rel="stylesheet" href="css/main.css"><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Групповые программы</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.css" rel="stylesheet">
@@ -11,24 +12,26 @@
 </head>
 <body>
 	<div class="row" id="head">
-		<div class="col-lg-1">
+		
+		<div class="burger">
+			<img src="img/burger.png" width="45" height="45" alt="burger"> 
 		</div>
 		
-		<div>
+		<div class="logo">
 			<h4>Фитнес клуб</h4>
 			<h6>Санкт-Петербург</h6>
 		</div>
 		
-		<div>
+		<div id="phone-number">
 			<div class="align-self-start">
 			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 			<div class="align-self-end">
-			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** ** (Отдел продаж)
+			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 		</div>
 		
-		<div>
+		<div id="address">
 			<div class="align-self-start">
 			<img src="img/house.png" width="20" height="20" alt="house"> Адрес 1
 			</div>
@@ -37,22 +40,29 @@
 			</div>
 		</div>
 		
-		<div class="align-self-start" style="margin-top: 10px">
-			<a href="lk.html" class="red_button">Личный кабинет</a>
+		<div>
+			<form action="lk.html">
+			   <button value="Личный кабинет" class="red_button">Личный кабинет</button>
+		   </form>
 		</div>
-		
-		<div class="col-lg-1">
-		</div>
+
 	</div>
-	<div class="row" id="navigation">
-		<div class="col-lg-1">
-		</div>
+	<div class="row" id="navigation1">
+		<div class="row" id="navigation-row">
 		<a href="main.html" class="nav">Главная</a>
 		<a href="price.html" class="nav">Цены на абонементы</a>
 		<a href="timetable.html" class="nav">Расписание</a>
 		<a href="group.html" class="nav">Групповые программы</a>
 		<a href="coaches.html" class="nav">Тренерский состав</a>
-		<div class="col-lg-1">
+		</div>
+	</div>
+	<div class="row" id="navigation2">
+		<div class="row" id="navigation-row">
+		<a href="main.html" class="nav">Главная</a>
+		<a href="price.html" class="nav">Цены</a>
+		<a href="timetable.html" class="nav">Расписание</a>
+		<a href="group.html" class="nav">Программы</a>
+		<a href="coaches.html" class="nav">Тренеры</a>
 		</div>
 	</div>
 	<table class="programms" cellpadding="30">
@@ -131,9 +141,71 @@
 			<td>Урок направлен на развитие координации, гибкости, пластичности и выносливости. Во время занятия разучивается танцевальная комбинации одного из латиноамериканских танцев: Samba, Cha-Cha-Cha, Rumba, Jive, Bachata и другие.</td>
 		</tr>
 	</table>
+	<div class="programms1">
+		<p><strong>BUMS+ABS</strong><br>
+		Урок направленный на изолированную проработку ягодичных мышц и мышц брюшного пресса и нижней части спины.</p>
+		<hr>
+		
+		<p><strong>Body sculpt</strong><br>
+		Урок направленный на развитие всех мышечных групп, на развитие силовой выносливости и на создание мышечного рельефа. Во время тренировки используются различные виды силового оборудования: отягощения разных весов, амортизаторы, выбор которых зависит от уровня вашей подготовленности.</p>
+		<hr>
+		
+		<p><strong>Upper body</strong><br>
+		Урок направленный на развитие и проработку мышц плечевого пояса, рук, груди, мышц спины и мышц брюшного пресса с использованием дополнительного оборудования.</p>
+		<hr>
+		
+		<p><strong>Lower Body</strong><br>
+		Урок направленный на проработку мышц ног, ягодиц и мышц брюшного пресса с использованием дополнительного оборудования.</p>
+		<hr>
+		
+		<p><strong>ABS+Flex</strong><br>
+		Урок направленный на изолированную проработку мышц брюшного пресса и нижней части спины, урок заканчивается растяжкой.</p>
+		<hr>
+		
+		<p><strong>Pump</strong><br>
+		Особый вид силовой тренировки, на которой прорабатываются и приводятся в тонус все основные мышцы. Тренировка проходит с особым драйвом и приносит гораздо больше результатов и удовольствия, чем монотонное поднятие тяжестей. Оно подходит как для мужчин так и для женщин, имеющих физическую подготовку. Занятие ведется с использованием специального оборудования – мини-штанг весом от 10 до 30 кг.</p>
+		<hr>
+		
+		<p><strong>Flex</strong><br>
+		Урок направлен на развитие гибкости и подвижности суставов. Расслабляющая музыка и плавный темп движений способствует снятию эмоционального напряжения.</p>
+		<hr>
+		
+		<p><strong>Yoga</strong><br>
+		Урок включает в себя комплекс упражнений, направленных на гармонизацию души и тела, сочетает различные духовные, психологические и физические практики, пришедшие к нам из Индии.</p>
+		<hr>
+		
+		<p><strong>Pilates</strong><br>
+		Урок направлен на тренировку мышц стабилизаторов, восстановление и сохранение подвижности позвоночника, улучшение мышечного баланса, развитие гибкости и контроля над собственным телом. Используются базовые упражнения и их модификации.</p>
+		<hr>
+		
+		<p><strong>Step 1</strong><br>
+		Групповой аэробный класс на степ-платформе, состоящий из разучивания базовых шагов степ-аэробики и соединения их в несложные комбинации, выполняемых под ритмичную музыку. Занятия на данном классе направлены на развитие координационных способностей, укрепление сердечно-сосудистой и дыхательной системы, увеличение общего порога выносливости.</p>
+		<hr>
+		
+		<p><strong>Step 2</strong><br>
+		Групповой аэробный класс с использованием сложной хореографии на степ-платформе. Включает в себя сложные комбинации и вариации шагов степ-аэробики с добавлением прыжков, танцевальных элементов и частой сменой направления движения.</p>
+		<hr>
+		
+		<p><strong>Functional training</strong><br>
+		Урок с использованием малого оборудования и веса собственного тела. Во время тренировки используются многосуставные движения в разных плоскостях. Тренировка направлена на укрепление крупных и мелких мышечных групп, развитие общей выносливости.</p>
+		<hr>
+		
+		<p><strong>Bosu</strong><br>
+		Урок с использованием полусферы. Комплексная тренировка на развитие координации, баланса и укрепления основных крупных и мелких мышечных групп.</p>
+		<hr>
+		
+		<p><strong>Zumba</strong><br>
+		Лицензионная танцевальная фитнес-программа на основе латиноамериканских ритмов, танцев и аэробики.</p>
+		<hr>
+		
+		<p><strong>Latina dance</strong><br>
+		Урок направлен на развитие координации, гибкости, пластичности и выносливости. Во время занятия разучивается танцевальная комбинации одного из латиноамериканских танцев: Samba, Cha-Cha-Cha, Rumba, Jive, Bachata и другие.</p>
+
+	</div>
+	</div>
 	<div class="row" id="bottom">
-		<div class="col-lg-2 offset-lg-1">
-			<div class="align-self-start">
+		<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-1 col-md-3 offset-md-1 col-sm-3 offset-sm-1 col-4">
+			<div class="align-self-start" id="bottom-elem">
 			Наши соцсети
 			</div>
 			<div class="align-self-end">
@@ -142,11 +214,16 @@
 				<img src="img/fb.png" width="30" height="30" alt="fb">
 			</div>
 		</div>
-		<div class="col-lg-4">
-			<img src="img/appstore.png" height="40" alt="download_apple">
-			<img src="img/googleplay.png" height="60" alt="download_android">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="align-self-start" id="bottom-elem">
+			Мобильные приложения
+			</div>
+			<div class="align-self-end">
+				<img src="img/appstore.png" height="30" alt="download_apple">
+				<img src="img/googleplay.png" height="30" alt="download_android">
+			</div>
 		</div>
-		<div class="col-lg-2 offset-lg-3">
+		<div class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-3 offset-1">
 			Copyright 2020
 		</div>
 	</div>

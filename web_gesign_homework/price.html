@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/main.css">
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Цены на абонементы</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.css" rel="stylesheet">
@@ -12,24 +12,25 @@
 </head>
 <body>
 	<div class="row" id="head">
-		<div class="col-lg-1">
+		<div class="burger">
+			<img src="img/burger.png" width="45" height="45" alt="burger"> 
 		</div>
 		
-		<div>
+		<div class="logo">
 			<h4>Фитнес клуб</h4>
 			<h6>Санкт-Петербург</h6>
 		</div>
 		
-		<div>
+		<div id="phone-number">
 			<div class="align-self-start">
 			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 			<div class="align-self-end">
-			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** ** (Отдел продаж)
+			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 		</div>
 		
-		<div>
+		<div id="address">
 			<div class="align-self-start">
 			<img src="img/house.png" width="20" height="20" alt="house"> Адрес 1
 			</div>
@@ -38,82 +39,108 @@
 			</div>
 		</div>
 		
-		<div class="align-self-start" style="margin-top: 10px">
-			<a href="lk.html" class="red_button">Личный кабинет</a>
+		<div>
+			<form action="lk.html">
+			   <button value="Личный кабинет" class="red_button">Личный кабинет</button>
+		   </form>
 		</div>
-		
-		<div class="col-lg-1">
-		</div>
+
 	</div>
-	<div class="row" id="navigation">
-		<div class="col-lg-1">
-		</div>
+	<div class="row" id="navigation1">
+		<div class="row" id="navigation-row">
 		<a href="main.html" class="nav">Главная</a>
 		<a href="price.html" class="nav">Цены на абонементы</a>
 		<a href="timetable.html" class="nav">Расписание</a>
 		<a href="group.html" class="nav">Групповые программы</a>
 		<a href="coaches.html" class="nav">Тренерский состав</a>
-		<div class="col-lg-1">
+		</div>
+	</div>
+	<div class="row" id="navigation2">
+		<div class="row" id="navigation-row">
+		<a href="main.html" class="nav">Главная</a>
+		<a href="price.html" class="nav">Цены</a>
+		<a href="timetable.html" class="nav">Расписание</a>
+		<a href="group.html" class="nav">Программы</a>
+		<a href="coaches.html" class="nav">Тренеры</a>
 		</div>
 	</div>
 	<div class="pricelist">
-		<h1 align="center">Цены на абонементы</h1>
-        <div class="row1" id="gallery">
+		<h1 class="big-heading" align="center">Цены на абонементы</h1>
+		<h2 class="little-heading" align="center">Цены на абонементы</h2>
+        <div class="row1">
 			
 			<figure  align="center">
-			<img src="img/day.png" width="70%" height="120px">
+			<img src="img/day.png" width="70%">
 			<p><figcaption>
-				<h4>Дневной на год</h4>
-				<h5>8.00 - 17.00</h5>
-				<h5>6500 р</h5>
+				<h4 class="big-heading">Дневной</h4>
+				<h5 class="big-heading">8.00 - 17.00</h5>
+				<h5 class="big-heading">6500 р</h5>
+				<h5 class="little-heading">Дневной</h5>
+				<h6 class="little-heading">8.00 - 17.00</h6>
+				<h6 class="little-heading">6500 р</h6>
 			</figcaption></p>
 			</figure>
 			
 			<figure  align="center">
-			<img src="img/full.png" width="70%" height="120px">
+			<img src="img/full.png" width="70%">
 			<p><figcaption>
-				<h4>Полный на год</h4>
-				<h5>8.00 - 23.00</h5>
-				<h5>10 000 р</h5>
+				<h4 class="big-heading">Полный</h4>
+				<h5 class="big-heading">8.00 - 23.00</h5>
+				<h5 class="big-heading">10 000 р</h5>
+				<h5 class="little-heading">Полный</h5>
+				<h6 class="little-heading">8.00 - 23.00</h6>
+				<h6 class="little-heading">10 000 р</h6>
 			</figcaption></p>
 			</figure>
 			
 			<figure  align="center">
-			<img src="img/night.png" width="70%" height="120px">
+			<img src="img/night.png" width="70%"s>
 			<p><figcaption>
-				<h4>Ночной на год</h4>
-				<h5>17.00 - 23.00</h5>
-				<h5>7000 р</h5>
+				<h4 class="big-heading">Ночной</h4>
+				<h5 class="big-heading">17.00 - 23.00</h5>
+				<h5 class="big-heading">7000 р</h5>
+				<h5 class="little-heading">Ночной</h5>
+				<h6 class="little-heading">17.00 - 23.00</h6>
+				<h6 class="little-heading">7000 р</h6>
 			</figcaption></p>
 			</figure>
 			
         </div>
-		<div class="row1" id="gallery">
+		<div class="row1">
 			
-			<figure  align="center">
+			<figure align="center">
 			<img src="img/clock.png" width="70%">
 			<p><figcaption>
-				<h4>3 месяца</h4>
-				<h5>36 занятий</h5>
-				<h5>2500 р</h5>
+				<h4 class="big-heading">3 месяца</h4>
+				<h5 class="big-heading">36 занятий</h5>
+				<h5 class="big-heading">2500 р</h5>
+				<h5 class="little-heading">3 месяца</h5>
+				<h6 class="little-heading">36 занятий</h6>
+				<h6 class="little-heading">2500 р</h6>
 			</figcaption></p>
 			</figure>
 			
-			<figure  align="center">
+			<figure align="center">
 			<img src="img/clock.png" width="70%">
 			<p><figcaption>
-				<h4>6 месяцев</h4>
-				<h5>72 занятия</h5>
-				<h5>5000 р</h5>
+				<h4 class="big-heading">6 месяцев</h4>
+				<h5 class="big-heading">72 занятия</h5>
+				<h5 class="big-heading">5000 р</h5>
+				<h5 class="little-heading">6 месяца</h5>
+				<h6 class="little-heading">72 занятий</h6>
+				<h6 class="little-heading">5000 р</h6>
 			</figcaption></p>
 			</figure>
 			
-			<figure  align="center">
+			<figure align="center">
 			<img src="img/clock.png" width="70%">
 			<p><figcaption>
-				<h4>9 месяцев</h4>
-				<h5>144 занятия</h5>
-				<h5>7500 р</h5>
+				<h4 class="big-heading">9 месяцев</h4>
+				<h5 class="big-heading">144 занятия</h5>
+				<h5 class="big-heading">7500 р</h5>
+				<h5 class="little-heading">9 месяцев</h5>
+				<h6 class="little-heading">144 занятия</h6>
+				<h6 class="little-heading">7500 р</h6>
 			</figcaption></p>
 			</figure>
 			
@@ -128,18 +155,39 @@
 		Месяц с тренером - 13000 р</p>
 	</div>
 	<div class="sale">
-		<h1 align="center">Акции и скидки</h1>
-        <div class="row1" id="gallery">
+		<h1 class="big-heading" align="center">Акции и скидки</h1>
+		<h2 class="little-heading" align="center">Акции и скидки</h2>
+        <div class="sale-row">
 			
 			<figure  align="center">
-			<img src="img/student.jpg" height="300px" width="500px">
+			<img class="sale-img" src="img/student.jpg">
 			<p><figcaption>
-				<h4>Скидка студентам 20% на все виды абонементов</h4>
+				<h4 class="big-heading">Скидка студентам 20% на все виды абонементов</h4>
+				<h5 class="little-heading">Скидка студентам 20% на все виды абонементов</h5>
 			</figcaption></p>
 			</figure>
 			
 			<figure  align="center">
-			<img src="img/invite.jpg" height="300px">
+			<img class="sale-img" src="img/invite.jpg">
+			<p><figcaption>
+				<h4 class="big-heading">Пригласи друга и вы оба получите скидку 15%</h4>
+				<h5 class="little-heading">Пригласи друга и вы оба получите скидку 15%</h5>
+			</figure>
+			
+        </div>
+        <div class="sale-row1">
+			
+			<figure  align="center">
+			<img class="sale-img" src="img/student.jpg">
+			<p><figcaption>
+				<h4>Скидка студентам 20% на все виды абонементов</h4>
+			</figcaption></p>
+			</figure>
+		</div>
+		
+		<div class="sale-row1">
+			<figure  align="center">
+			<img class="sale-img" src="img/invite.jpg">
 			<p><figcaption>
 				<h4>Пригласи друга и вы оба получите скидку 15%</h4>
 			</figure>
@@ -147,8 +195,8 @@
         </div>
 	</div>
 	<div class="row" id="bottom">
-		<div class="col-lg-2 offset-lg-1">
-			<div class="align-self-start">
+		<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-1 col-md-3 offset-md-1 col-sm-3 offset-sm-1 col-4">
+			<div class="align-self-start" id="bottom-elem">
 			Наши соцсети
 			</div>
 			<div class="align-self-end">
@@ -157,11 +205,16 @@
 				<img src="img/fb.png" width="30" height="30" alt="fb">
 			</div>
 		</div>
-		<div class="col-lg-4">
-			<img src="img/appstore.png" height="40" alt="download_apple">
-			<img src="img/googleplay.png" height="60" alt="download_android">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="align-self-start" id="bottom-elem">
+			Мобильные приложения
+			</div>
+			<div class="align-self-end">
+				<img src="img/appstore.png" height="30" alt="download_apple">
+				<img src="img/googleplay.png" height="30" alt="download_android">
+			</div>
 		</div>
-		<div class="col-lg-2 offset-lg-3">
+		<div class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-3 offset-1">
 			Copyright 2020
 		</div>
 	</div>

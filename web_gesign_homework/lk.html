@@ -1,8 +1,9 @@
-<link rel="stylesheet" href="css/main.css"><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Главная</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.css" rel="stylesheet">
@@ -11,24 +12,26 @@
 </head>
 <body>
 	<div class="row" id="head">
-		<div class="col-lg-1">
+		
+		<div class="burger">
+			<img src="img/burger.png" width="45" height="45" alt="burger"> 
 		</div>
 		
-		<div>
+		<div class="logo">
 			<h4>Фитнес клуб</h4>
 			<h6>Санкт-Петербург</h6>
 		</div>
 		
-		<div>
+		<div id="phone-number">
 			<div class="align-self-start">
 			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 			<div class="align-self-end">
-			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** ** (Отдел продаж)
+			<img src="img/phone.png" width="15" height="15" alt="phone"> +7 (***) *** ** **
 			</div>
 		</div>
 		
-		<div>
+		<div id="address">
 			<div class="align-self-start">
 			<img src="img/house.png" width="20" height="20" alt="house"> Адрес 1
 			</div>
@@ -37,28 +40,36 @@
 			</div>
 		</div>
 		
-		<div class="align-self-start" style="margin-top: 10px">
-			<a href="lk.html" class="red_button">Личный кабинет</a>
+		<div>
+			<form action="lk.html">
+			   <button value="Личный кабинет" class="red_button">Личный кабинет</button>
+		   </form>
 		</div>
-		
-		<div class="col-lg-1">
-		</div>
+
 	</div>
-	<div class="row" id="navigation">
-		<div class="col-lg-1">
-		</div>
+	<div class="row" id="navigation1">
+		<div class="row" id="navigation-row">
 		<a href="main.html" class="nav">Главная</a>
 		<a href="price.html" class="nav">Цены на абонементы</a>
 		<a href="timetable.html" class="nav">Расписание</a>
 		<a href="group.html" class="nav">Групповые программы</a>
 		<a href="coaches.html" class="nav">Тренерский состав</a>
-		<div class="col-lg-1">
 		</div>
 	</div>
-	<h2 align="center">Здравствуйте, inessaivanova!</h2>
+	<div class="row" id="navigation2">
+		<div class="row" id="navigation-row">
+		<a href="main.html" class="nav">Главная</a>
+		<a href="price.html" class="nav">Цены</a>
+		<a href="timetable.html" class="nav">Расписание</a>
+		<a href="group.html" class="nav">Программы</a>
+		<a href="coaches.html" class="nav">Тренеры</a>
+		</div>
+	</div>
+	<h2 align="center" class="big-heading">Здравствуйте, inessaivanova!</h2>
+	<h3 align="center" class="little-heading">Здравствуйте, inessaivanova!</h3>
 	<div class="lk">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 avatar-row">
 				<figure>
 				<img class="avatar" src="img/avatar.jpg">
 				<figcaption>
@@ -67,100 +78,43 @@
 				</figcaption>
 				<figure>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-lg-8 col-md-8">
 				<p>
 				Вид абонемента: полный<br>
 				Дней до конца абонемента: 265<br>
-				Последнее посещение: 29.10.2020<br>
+				Последнее посещение: 29.10.2020
 				</p>
-				<button class="red_button">Заморозить абонемент</button>
-				<h4></h4>
+				<button class="red_button1">Заморозить абонемент</button>
 				<h4>Занятия, на которые вы записаны</h4>
-				<table class="zapis" border cellpadding="10">
-					<tr>
-						<td>Занятие</td>
-						<td>Время</td>
-						<td>Дата</td>
-					</tr>
-					<tr>
-						<td>BUMS+ABS</td>
-						<td>18:00</td>
-						<td>04.11.2020</td>
-					</tr>
-					<tr>
-						<td>ABS+Flex</td>
-						<td>11:00</td>
-						<td>05.11.2020</td>
-					</tr>
-				</table>
+				<ul class="zapis">
+					<li><p><strong>BUMS+ABS</strong><br>18:00 04.11.2020</p></li>
+					<li><p><strong>ABS+Flex</strong><br>11:00 05.11.2020</p></li>
+				</ul>
 				
 				<h4></h4>
 				<h4>История посещений</h4>
-				<table class="zapis" border cellpadding="10">
-					<tr>
-						<td>Занятие</td>
-						<td>Время</td>
-						<td>Дата</td>
-					</tr>
-					<tr>
-						<td>Lower body</td>
-						<td>19:00</td>
-						<td>29.10.2020</td>
-					</tr>
-					<tr>
-						<td>Flex</td>
-						<td>11:00</td>
-						<td>26.10.2020</td>
-					</tr>
-					<tr>
-						<td>Upper body</td>
-						<td>18:00</td>
-						<td>23.10.2020</td>
-					</tr>
-					<tr>
-						<td>Yoga</td>
-						<td>13:00</td>
-						<td>20.10.2020</td>
-					</tr>
-					<tr>
-						<td>Latina dance</td>
-						<td>17:00</td>
-						<td>17.10.2020</td>
-					</tr>
-					<tr>
-						<td>BUMS+ABS</td>
-						<td>18:00</td>
-						<td>14.10.2020</td>
-					</tr>
-					<tr>
-						<td>Body Sculpt</td>
-						<td>19:00</td>
-						<td>12.10.2020</td>
-					</tr>
-					<tr>
-						<td>Тренажерный зал</td>
-						<td>14:00</td>
-						<td>10.10.2020</td>
-					</tr>
-					<tr>
-						<td>BUMS+ABS</td>
-						<td>18:00</td>
-						<td>07.10.2020</td>
-					</tr>
-					<tr>
-						<td>ABS+Flex</td>
-						<td>11:00</td>
-						<td>01.10.2020</td>
-					</tr>
-				</table>
+				<div class="zapis">
+					<ul>
+					<li><p><strong>Lower body</strong><br>19:00 29.10.2020</p></li>
+					<li><p><strong>Flex</strong><br>11:00 26.10.2020</p></li>
+					<li><p><strong>Upper body</strong><br>18:00 26.10.2020</p></li>
+					<li><p><strong>Yoga</strong><br>13:00 20.10.2020</p></li>
+					<li><p><strong>Latina dance</strong><br>17:00 17.10.2020</p></li>
+					<li><p><strong>BUMS+ABS</strong><br>18:00 14.10.2020</p></li>
+					<li><p><strong>Body Sculpt</strong><br>19:00 12.10.2020</p></li>
+					<li><p><strong>Tренажерный зал</strong><br>14:00 10.10.2020</p></li>
+					<li><p><strong>BUMS+ABS</strong><br>18:00 07.10.2020</p></li>
+					<li><p><strong>ABS+Flex</strong><br>11:00 01.10.2020</p></li>
+					</ul>
+				</div>
 				<h3></h3>
-				<button class="red_button">Получить полную историю</button>
+				<button class="red_button1">Получить полную историю</button>
 			</div>
 		</div>
 	</div>
 	<div class="row" id="bottom">
-		<div class="col-lg-2 offset-lg-1">
-			<div class="align-self-start">
+		<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-1 col-md-3 offset-md-1 col-sm-3 offset-sm-1 col-4">
+			<div class="align-self-start" id="bottom-elem">
 			Наши соцсети
 			</div>
 			<div class="align-self-end">
@@ -169,13 +123,19 @@
 				<img src="img/fb.png" width="30" height="30" alt="fb">
 			</div>
 		</div>
-		<div class="col-lg-4">
-			<img src="img/appstore.png" height="40" alt="download_apple">
-			<img src="img/googleplay.png" height="60" alt="download_android">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="align-self-start" id="bottom-elem">
+			Мобильные приложения
+			</div>
+			<div class="align-self-end">
+				<img src="img/appstore.png" height="30" alt="download_apple">
+				<img src="img/googleplay.png" height="30" alt="download_android">
+			</div>
 		</div>
-		<div class="col-lg-2 offset-lg-3">
+		<div class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 col-md-2 offset-md-2 col-sm-2 offset-sm-2 col-3 offset-1">
 			Copyright 2020
 		</div>
+	</div>
 	</div>
 </body>
 </html>
