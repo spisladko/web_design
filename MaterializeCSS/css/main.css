@@ -39,22 +39,29 @@
 	display: none;
 }
 
-a.nav:active,
-a.nav:hover,
-.nav1 {
-	color: white;
+a:hover {
 	text-decoration: none;
-	padding-left: 3px;
-	padding-right: 3px;
+	color: white;
 }
 
-.red_button {
-	background-color: red;
-	color: white;
-	padding: 10px 10px 10px 10px;
-	border-radius: 10px;
-	border: none;
+.nav-button {
+	transition-duration: 0.5s;
+	transition-property: background-color;
 }
+
+.nav-button:hover{
+	background-color: #303030;
+}
+
+.red-button:hover { 
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none; 
+  animation: pulse 1.25s
+} 
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(234, 65, 49, 0.02);}} 
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(226, 60, 44, 0.01);}} 
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(218, 80, 67, 0);}} 
+@keyframes pulse {to {box-shadow: 0 0 0 20px rgba(218, 80, 67, 0);}}
 
 .description {
 	width: 100%;
@@ -75,28 +82,29 @@ a.nav:hover,
 
 .gallery-container {
 	width: 90%;
-	margin: 0 auto;
+	margin-right: auto; 
+	margin-left: auto;
 	margin-top: 10px;
 }
 
+.gallery-row {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	align-items: center;
+}
+
 .photo {
-    float: left;
-    width: 33.333333%; 
+    float: center;
+    width: 40%; 
+	height: 40%;
     padding: 10px; 
-    box-sizing: border-box; 
+	transition: width 1s;
 }
 
-.photo1 {
-    float: left;
-    width: 50%; 
-    padding: 10px; 
-    box-sizing: border-box; 
-}
-
-.photo img {
-    max-width: 100%;
-    display: block;
-    height: auto;
+.photo:hover {
+	width: 45%;
 }
 
 .address {
@@ -137,4 +145,3 @@ a.nav:hover,
 	display: flex; 
 	align-items: center
 }
-
